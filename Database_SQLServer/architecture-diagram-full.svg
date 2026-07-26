@@ -1,0 +1,172 @@
+<svg viewBox="0 0 1440 1000" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#0A1830"/>
+    <stop offset="100%" stop-color="#0E2549"/>
+  </linearGradient>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#9FB4D4"/>
+  </marker>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.35"/>
+  </filter>
+</defs>
+
+<rect x="0" y="0" width="1440" height="1000" fill="url(#bg)" rx="16"/>
+<text x="720" y="42" text-anchor="middle" fill="#FFFFFF" font-size="25" font-weight="700">Enterprise Banking Data Platform</text>
+<text x="720" y="66" text-anchor="middle" fill="#9FB4D4" font-size="14">SQL Server 2019 → Microsoft Fabric Lakehouse — Full Solution Architecture</text>
+<g filter="url(#shadow)"><rect x="30" y="95" width="205" height="300" rx="12" fill="#1E3A5F" stroke="#3D5A80" stroke-width="1.5"/></g>
+<circle cx="205" cy="127" r="20" fill="rgba(255,255,255,0.10)"/>
+
+    <g stroke="#9FB4D4" stroke-width="2" fill="none">
+      <ellipse cx="205" cy="112" rx="14" ry="5"/>
+      <path d="M 191,112 v20 a14,5 0 0 0 28,0 v-20"/>
+      <path d="M 191,119 a14,5 0 0 0 28,0" />
+      <path d="M 191,126 a14,5 0 0 0 28,0" />
+    </g>
+<text x="46" y="129" fill="#FFFFFF" font-size="15" font-weight="700">SQL Server 2019</text>
+<text x="46" y="149" fill="#9FB4D4" font-size="10.5" font-style="italic">On-Prem Source System</text>
+<line x1="46" y1="161" x2="219" y2="161" stroke="#3D5A80" stroke-width="1"/>
+  <text x="46" y="185" fill="#C9D6EA" font-size="10.5">• Customer Master</text>
+  <text x="46" y="202" fill="#C9D6EA" font-size="10.5">• Account Master</text>
+  <text x="46" y="219" fill="#C9D6EA" font-size="10.5">• Transaction Ledger</text>
+  <text x="46" y="236" fill="#C9D6EA" font-size="10.5">• FX / Currency Rates</text>
+  <text x="46" y="253" fill="#C9D6EA" font-size="10.5">• Branch &amp; Product Ref</text>
+<g filter="url(#shadow)"><rect x="253" y="95" width="205" height="300" rx="12" fill="#22406B" stroke="#3D5A80" stroke-width="1.5"/></g>
+<circle cx="428" cy="127" r="20" fill="rgba(255,255,255,0.10)"/>
+
+    <g stroke="#9FB4D4" stroke-width="2.2" fill="none" stroke-linecap="round">
+      <path d="M 413,121 h22"/>
+      <path d="M 430,116 l7,5 l-7,5"/>
+      <path d="M 413,135 h22"/>
+      <path d="M 430,130 l7,5 l-7,5"/>
+    </g>
+<text x="269" y="129" fill="#FFFFFF" font-size="15" font-weight="700">Fabric Data Factory</text>
+<text x="269" y="149" fill="#9FB4D4" font-size="10.5" font-style="italic">Ingestion &amp; Orchestration</text>
+<line x1="269" y1="161" x2="442" y2="161" stroke="#3D5A80" stroke-width="1"/>
+  <text x="269" y="185" fill="#C9D6EA" font-size="10.5">• Parameterized pipelines</text>
+  <text x="269" y="202" fill="#C9D6EA" font-size="10.5">• Incremental (watermark)</text>
+  <text x="269" y="219" fill="#C9D6EA" font-size="10.5">• Scheduled + event triggers</text>
+  <text x="269" y="236" fill="#C9D6EA" font-size="10.5">• Copy activity → Lakehouse</text>
+<g filter="url(#shadow)"><rect x="476" y="95" width="205" height="300" rx="12" fill="#7A4B26" stroke="#A9713F" stroke-width="1.5"/></g>
+<circle cx="651" cy="127" r="20" fill="rgba(255,255,255,0.10)"/>
+
+    <g stroke="#F0C89A" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M 636,121 l6,-14 h18 l6,14"/>
+      <path d="M 636,121 v10 h30 v-10"/>
+      <path d="M 636,121 h9 a1,1 0 0 0 1,1 h10 a1,1 0 0 0 1,-1 h9"/>
+    </g>
+<text x="492" y="129" fill="#FFFFFF" font-size="15" font-weight="700">Bronze Lakehouse</text>
+<text x="492" y="149" fill="#E8CBAA" font-size="10.5" font-style="italic">Raw Landing Zone</text>
+<line x1="492" y1="161" x2="665" y2="161" stroke="#A9713F" stroke-width="1"/>
+  <text x="492" y="185" fill="#E8CBAA" font-size="10.5">• Raw Delta tables</text>
+  <text x="492" y="202" fill="#E8CBAA" font-size="10.5">• Schema-on-read</text>
+  <text x="492" y="219" fill="#E8CBAA" font-size="10.5">• Full history retained</text>
+  <text x="492" y="236" fill="#E8CBAA" font-size="10.5">• Partitioned by load date</text>
+  <text x="492" y="253" fill="#E8CBAA" font-size="10.5">• Immutable landing zone</text>
+<g filter="url(#shadow)"><rect x="699" y="95" width="205" height="300" rx="12" fill="#5B6472" stroke="#8B93A0" stroke-width="1.5"/></g>
+<circle cx="874" cy="127" r="20" fill="rgba(255,255,255,0.10)"/>
+
+    <g stroke="#E4E8ED" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M 859,114 h30 l-11,13 v10 l-8,4 v-14 z"/>
+    </g>
+<text x="715" y="129" fill="#FFFFFF" font-size="15" font-weight="700">Silver Lakehouse</text>
+<text x="715" y="149" fill="#DCE0E6" font-size="10.5" font-style="italic">Cleansed &amp; Conformed</text>
+<line x1="715" y1="161" x2="888" y2="161" stroke="#8B93A0" stroke-width="1"/>
+  <text x="715" y="185" fill="#DCE0E6" font-size="10.5">• PySpark cleansing</text>
+  <text x="715" y="202" fill="#DCE0E6" font-size="10.5">• Deduplication</text>
+  <text x="715" y="219" fill="#DCE0E6" font-size="10.5">• SCD Type 2 (Customer/Acct)</text>
+  <text x="715" y="236" fill="#DCE0E6" font-size="10.5">• Delta MERGE upserts</text>
+  <text x="715" y="253" fill="#DCE0E6" font-size="10.5">• FX conversion to base ccy</text>
+<g filter="url(#shadow)"><rect x="922" y="95" width="205" height="300" rx="12" fill="#8A6D1F" stroke="#C9A227" stroke-width="1.5"/></g>
+<circle cx="1097" cy="127" r="20" fill="rgba(255,255,255,0.10)"/>
+<path d="M 1097.0,113.0 L 1100.5,122.1 L 1110.3,122.7 L 1102.7,128.9 L 1105.2,138.3 L 1097.0,133.0 L 1088.8,138.3 L 1091.3,128.9 L 1083.7,122.7 L 1093.5,122.1 Z" fill="#FFE9A8" opacity="0.95"/>
+<text x="938" y="129" fill="#FFFFFF" font-size="15" font-weight="700">Gold Lakehouse</text>
+<text x="938" y="149" fill="#F3E3AA" font-size="10.5" font-style="italic">Curated Star Schema</text>
+<line x1="938" y1="161" x2="1111" y2="161" stroke="#C9A227" stroke-width="1"/>
+  <text x="938" y="185" fill="#F3E3AA" font-size="10.5">• Star schema (Fact/Dim)</text>
+  <text x="938" y="202" fill="#F3E3AA" font-size="10.5">• FactTransaction</text>
+  <text x="938" y="219" fill="#F3E3AA" font-size="10.5">• DimCustomer / DimAccount</text>
+  <text x="938" y="236" fill="#F3E3AA" font-size="10.5">• DimDate / DimCurrency</text>
+  <text x="938" y="253" fill="#F3E3AA" font-size="10.5">• Row-Level Security applied</text>
+<g filter="url(#shadow)"><rect x="1145" y="95" width="205" height="300" rx="12" fill="#F2C811" stroke="#D9A600" stroke-width="1.5"/></g>
+<circle cx="1320" cy="127" r="20" fill="rgba(255,255,255,0.10)"/>
+
+    <g>
+      <g stroke="#1B1B1B" stroke-width="2.4" stroke-linecap="round">
+        <line x1="1306" y1="139" x2="1306" y2="128"/>
+        <line x1="1314" y1="139" x2="1314" y2="121"/>
+        <line x1="1322" y1="139" x2="1322" y2="117"/>
+      </g>
+      <circle cx="1332" cy="118" r="4.2" fill="#1B1B1B"/>
+      <path d="M 1325,139 q0,-9 7,-9 q7,0 7,9 z" fill="#1B1B1B"/>
+    </g>
+<text x="1161" y="129" fill="#1B1B1B" font-size="15" font-weight="700">Power BI</text>
+<text x="1161" y="149" fill="#4A3B00" font-size="10.5" font-style="italic">Semantic Model &amp; Reports</text>
+<line x1="1161" y1="161" x2="1334" y2="161" stroke="#D9A600" stroke-width="1"/>
+  <text x="1161" y="185" fill="#4A3B00" font-size="10.5">• Direct Lake connectivity</text>
+  <text x="1161" y="202" fill="#4A3B00" font-size="10.5">• RLS-enabled reports</text>
+  <text x="1161" y="219" fill="#4A3B00" font-size="10.5">• Customer 360 dashboard</text>
+  <text x="1161" y="236" fill="#4A3B00" font-size="10.5">• Account &amp; Txn analytics</text>
+  <text x="1161" y="253" fill="#4A3B00" font-size="10.5">• Executive KPI summary</text>
+<line x1="235" y1="245.0" x2="253" y2="245.0" stroke="#9FB4D4" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="458" y1="245.0" x2="476" y2="245.0" stroke="#9FB4D4" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="681" y1="245.0" x2="699" y2="245.0" stroke="#9FB4D4" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="904" y1="245.0" x2="922" y2="245.0" stroke="#9FB4D4" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="1127" y1="245.0" x2="1145" y2="245.0" stroke="#9FB4D4" stroke-width="2.5" marker-end="url(#arrow)"/>
+<circle cx="494" cy="113" r="6" fill="#CD7F32"/>
+<circle cx="717" cy="113" r="6" fill="#C0C0C0"/>
+<circle cx="940" cy="113" r="6" fill="#FFD700"/>
+<g filter="url(#shadow)"><rect x="476" y="425" width="651" height="110" rx="10" fill="#123024" stroke="#2E6B4F" stroke-width="1.5" stroke-dasharray="4 3"/></g>
+<circle cx="1093" cy="453" r="13" fill="none" stroke="#7FE3B4" stroke-width="2.2"/>
+      <path d="M 1087,453 l5,5 l9,-11" fill="none" stroke="#7FE3B4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="492" y="449" fill="#7FE3B4" font-size="13" font-weight="700">Data Quality Framework</text>
+  <text x="492" y="471" fill="#BFE8D3" font-size="10">• Completeness &amp; null-rule checks</text>
+  <text x="492" y="487" fill="#BFE8D3" font-size="10">• Referential integrity validation</text>
+  <text x="492" y="503" fill="#BFE8D3" font-size="10">• Schema-drift detection</text>
+  <text x="806" y="471" fill="#BFE8D3" font-size="10">• Row-count reconciliation (src vs tgt)</text>
+  <text x="806" y="487" fill="#BFE8D3" font-size="10">• Quarantine / rejection handling</text>
+<line x1="578.5" y1="395" x2="578.5" y2="425" stroke="#2E6B4F" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrow)"/>
+<line x1="801.5" y1="395" x2="801.5" y2="425" stroke="#2E6B4F" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrow)"/>
+<line x1="1024.5" y1="395" x2="1024.5" y2="425" stroke="#2E6B4F" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrow)"/>
+<g filter="url(#shadow)"><rect x="699" y="560" width="651" height="110" rx="10" fill="#2E1E3A" stroke="#6B4A8F" stroke-width="1.5" stroke-dasharray="4 3"/></g>
+<path d="M 1316,574 l13,5 v10 c0,9 -6,14 -13,17 c-7,-3 -13,-8 -13,-17 v-10 z"
+      fill="none" stroke="#C9A6F0" stroke-width="2.2" stroke-linejoin="round"/>
+      <path d="M 1311,588 l4,4 l7,-8" fill="none" stroke="#C9A6F0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="715" y="584" fill="#C9A6F0" font-size="13" font-weight="700">Security &amp; Governance</text>
+  <text x="715" y="606" fill="#DCC6F2" font-size="10">• Row-Level Security (RLS)</text>
+  <text x="715" y="622" fill="#DCC6F2" font-size="10">• PII classification &amp; masking</text>
+  <text x="715" y="638" fill="#DCC6F2" font-size="10">• Workspace role-based access</text>
+  <text x="1029" y="606" fill="#DCC6F2" font-size="10">• Audit logging &amp; lineage tracking</text>
+<line x1="801.5" y1="535" x2="801.5" y2="560" stroke="#6B4A8F" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrow)"/>
+<line x1="1024.5" y1="535" x2="1024.5" y2="560" stroke="#6B4A8F" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrow)"/>
+<line x1="1247.5" y1="395" x2="1247.5" y2="560" stroke="#6B4A8F" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrow)"/>
+<g filter="url(#shadow)"><rect x="30" y="695" width="1320" height="95" rx="10" fill="#1E2A42" stroke="#3D5A80" stroke-width="1.5" stroke-dasharray="4 3"/></g>
+<g fill="none" stroke="#8FCBFF" stroke-width="2.2" stroke-linecap="round">
+      <path d="M 1305,721 a11,11 0 1 1 4,8.5"/>
+      <path d="M 1305,715 v6 h6"/>
+    </g>
+<text x="46" y="719" fill="#8FCBFF" font-size="13" font-weight="700">CI/CD &amp; Version Control — Azure DevOps + Git</text>
+  <text x="46" y="741" fill="#C7E3FF" font-size="10">• Feature-branch Git workflow</text>
+  <text x="46" y="757" fill="#C7E3FF" font-size="10">• Automated build &amp; release pipelines</text>
+  <text x="550" y="741" fill="#C7E3FF" font-size="10">• Dev → Test → Prod promotion</text>
+  <text x="550" y="757" fill="#C7E3FF" font-size="10">• Notebook &amp; pipeline unit testing</text>
+<g filter="url(#shadow)"><rect x="30" y="810" width="1320" height="80" rx="10" fill="#3A1E1E" stroke="#8F4A4A" stroke-width="1.5" stroke-dasharray="4 3"/></g>
+<g fill="none" stroke="#F5A5A5" stroke-width="2">
+      <circle cx="1316" cy="834" r="4" fill="#F5A5A5" stroke="none"/>
+      <circle cx="1316" cy="834" r="8"/>
+      <circle cx="1316" cy="834" r="13"/>
+    </g>
+<text x="46" y="834" fill="#F5A5A5" font-size="13" font-weight="700">Monitoring &amp; Observability</text>
+  <text x="46" y="856" fill="#F0C6C6" font-size="10">• Pipeline run monitoring &amp; alerting</text>
+  <text x="46" y="872" fill="#F0C6C6" font-size="10">• Data quality failure notifications</text>
+  <text x="46" y="888" fill="#F0C6C6" font-size="10">• Capacity &amp; workspace utilization tracking</text>
+<text x="30" y="920" fill="#FFFFFF" font-size="13" font-weight="700">Medallion Layer Legend</text>
+<circle cx="36" cy="936" r="6" fill="#CD7F32"/>
+<text x="50" y="940" fill="#C9D6EA" font-size="10.5">Bronze — raw, immutable, full history</text>
+<circle cx="496" cy="936" r="6" fill="#C0C0C0"/>
+<text x="510" y="940" fill="#C9D6EA" font-size="10.5">Silver — validated, deduplicated, conformed</text>
+<circle cx="956" cy="936" r="6" fill="#FFD700"/>
+<text x="970" y="940" fill="#C9D6EA" font-size="10.5">Gold — dimensional star schema for reporting</text>
+</svg>
